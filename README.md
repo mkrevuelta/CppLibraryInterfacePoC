@@ -1,7 +1,7 @@
 # CppLibraryInterfacePoC
 A library Proof of Concept with:
 + Mostly C++ interface (objects, move semantics)
-+ Easy to write (real C++, **no** conversion to/from plain old C)
++ Easy to write (real C++, **no** conversion to/from extern "C" functions)
 + Easy to use (objects are given away, managed by unique pointers)
 + Highly compatible across compiler versions from a given vendor (only requirement: C++11 or above)
 
