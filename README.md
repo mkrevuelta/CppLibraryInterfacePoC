@@ -1,5 +1,5 @@
 # CppLibraryInterfacePoC
-Proof of Concept: A library with C++ interface, easy to write and use, yet highly compatible across comiler versions.
+A library PoC with C++ interface, easy to write, easy to use, yet highly compatible across compiler versions
 
 This repository will contain evolved versions of the examples I proposed in this presentation:
 
