@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="interface">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="interface\Foo">
+      <UniqueIdentifier>{d5aa5753-f4b6-4635-9e0b-e980c33828d7}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\interface\Foo\ApiMacros.h">
+      <Filter>interface\Foo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\interface\Foo\Span.h">
+      <Filter>interface\Foo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\interface\Foo\UniquePtr.h">
+      <Filter>interface\Foo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\interface\Foo.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\interface\Foo\StringMsg.h">
+      <Filter>interface\Foo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\interface\Foo\PImplMacros.h">
+      <Filter>interface\Foo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\interface\Foo\NumbersMsg.h">
+      <Filter>interface\Foo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\interface\Foo\MultiMapMsg.h">
+      <Filter>interface\Foo</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\Foo.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\StringMsg.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\NumbersMsg.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MultiMapMsg.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
