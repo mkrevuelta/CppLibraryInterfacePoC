@@ -44,7 +44,7 @@ ConstSpan<const char*> MultiMapMsg::Strings::getAll () const
                  : ConstSpan<const char*>();
 }
 
-void MultiMapMsg::add (const char * key, const char * value)
+void MultiMapMsg::insert (const char * key, const char * value)
 {
     if (!pImpl)
         pImpl = UniquePtr<Impl>();

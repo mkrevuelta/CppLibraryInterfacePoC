@@ -49,12 +49,12 @@ MultiMapMsg FOO_API getNamesMultimap ()
 {
     MultiMapMsg names;
 
-    names.add ("Disney", "Minnie");
-    names.add ("Disney", "Pluto");
+    names.insert ("Disney", "Minnie");
+    names.insert ("Disney", "Pluto");
 
-    names.add ("Marvel", "Thor");
-    names.add ("Marvel", "Hulk");
-    names.add ("Marvel", "Conan");
+    names.insert ("Marvel", "Thor");
+    names.insert ("Marvel", "Hulk");
+    names.insert ("Marvel", "Conan");
 
     return names;
 }

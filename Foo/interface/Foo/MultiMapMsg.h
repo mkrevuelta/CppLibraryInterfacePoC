@@ -31,7 +31,7 @@ public:
         ConstSpan<const char*> getAll () const;
     };
 
-    void add (const char * key, const char * value);
+    void insert (const char * key, const char * value);
     Strings getKeys () const;
     Strings getValuesForKey (const char * key) const;
     void clear ();
