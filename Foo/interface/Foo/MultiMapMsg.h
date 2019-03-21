@@ -23,22 +23,30 @@ class FOO_API MultiMapMsg
 
 public:
 
-    class FOO_API Strings
+    struct KeyValuePair
     {
-        FOO_DECLARE_PIMPL (Strings)
-    public:
-        void add (const char * s);
-        ConstSpan<const char*> getAll () const;
+        const char * key;
+        const char * value;
     };
 
     void insert (const char * key, const char * value);
-    Strings getKeys () const;
-    Strings getValuesForKey (const char * key) const;
+    std::size_t erase (const char * key, const char * value);
+    std::size_t erase (const char * key);
     void clear ();
+
+    std::size_t size () const;
+    std::size_t getAllKeyValuePairs (Span<KeyValuePair> kvPairs) const;
+
+    std::size_t numKeys () const;
+    std::size_t getKeys (Span<const char*> keys) const;
+
+    std::size_t numValuesOfKey (const char * key) const;
+    std::size_t getValuesOfKey (const char * key, Span<const char*> values) const;
+
+    const char * getOneValueOfKey (const char * key) const;
 };
 
 FOO_INLINE_SYMMETRIC_SWAP (MultiMapMsg)
-FOO_INLINE_SYMMETRIC_SWAP (MultiMapMsg::Strings)
 
 } // namespace foo
 
