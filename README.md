@@ -16,7 +16,7 @@ The Foo library can receive or return the next data structures, or "messages":
 
 + StringMsg: a text string
 + NumbersMsg: an array of numbers
-+ MultiMapMsg: a string-to-string multimap (this one will change a bit, so stay tuned!)
++ MultiMapMsg: a string-to-string multimap
 
 Each type of message is wrapped in a class. With respect to the usage of C++, the main restriction is that the methods provide access to the data through C types (i.e., const char \*). On the other hand, these classes are implemented with the PIMPL idiom and support move semantics. Thus, data can be passed with minimal overhead and, at the same time, the lifetime of objects is very easy to manage.
 
