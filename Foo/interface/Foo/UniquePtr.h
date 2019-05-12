@@ -31,12 +31,6 @@ public:
     explicit UniquePtr (const T &);
     ~UniquePtr () FOO_NOEXCEPT;
 
-    UniquePtr<T> clone () const
-    {
-        return ptr ? UniquePtr<T>(*ptr)
-                   : UniquePtr<T>(nullptr);
-    }
-
     UniquePtr<T> & operator= (UniquePtr<T> && other) FOO_NOEXCEPT
     {
         UniquePtr<T> tmp (std::move(other));
