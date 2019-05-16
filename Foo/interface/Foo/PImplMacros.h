@@ -1,5 +1,5 @@
 /*
-    FOO/PImplMacros.h
+    Foo/PImplMacros.h
 
     Copyright (c) 2019, Martin Knoblauch Revuelta
     See accompanying LICENSE
