@@ -11,6 +11,7 @@
 #define __FOO_UNIQUEPTR_H__
 
 #include "ApiMacros.h"
+#include <utility>
 
 namespace foo
 {
