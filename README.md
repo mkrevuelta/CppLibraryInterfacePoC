@@ -10,6 +10,10 @@ This repository contains evolved versions of the examples I proposed in this pre
 
 + https://www.mkrevuelta.com/en/2019/03/06/lets-make-easy-to-use-libraries-using-stdcpp-2019/
 
+**NEW:** I'm taking all this theory to practice in a real library:
+
++ https://github.com/mkrevuelta/CppMoveBase64
+
 ## Foo library
 
 The Foo library can receive or return the next data structures, or "messages":
